@@ -40,12 +40,12 @@ void SearchWord()
         {
             break;
         }
-        /*
+
         if (input != null && dictionary.Search(input))
         {
             Console.WriteLine($"Found \"{input}\" in dictionary");
         }
-        */
+
         else
         {
             Console.WriteLine($"Did not find \"{input}\" in dictionary");
