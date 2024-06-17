@@ -14,18 +14,22 @@ Trie dictionary = InitializeTrie(words);
 // DeleteWord();
 // GetSpellingSuggestions();
 
+// This function initializes a Trie data structure with a given set of words.
 Trie InitializeTrie(string[] words)
 {
+    // Create a new Trie object.
     Trie trie = new Trie();
 
+    // Loop through each word in the provided array.
     foreach (string word in words)
     {
+        // Insert the current word into the Trie.
         trie.Insert(word);
     }
 
+    // Return the populated Trie.
     return trie;
 }
-
 void SearchWord()
 {
     while (true)
