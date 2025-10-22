@@ -1,6 +1,7 @@
+﻿namespace TrieDictionaryTest;
 
 [TestClass]
-public class TrieTest
+public sealed class TrieTest
 {
     // Test that a word is inserted in the trie
     [TestMethod]
@@ -67,7 +68,7 @@ public class TrieTest
         Assert.AreEqual("catatonic", suggestions[1]);
         Assert.AreEqual("caterpillar", suggestions[2]);
     }
-    
+
 
     // Test GetSpellingSuggestions for a word not present in the trie
     [TestMethod]
